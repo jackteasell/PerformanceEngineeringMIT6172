@@ -29,8 +29,8 @@ int main(int argc, char * argv[]) {  // What is the type of argv?
   // For each of the following, why is the assignment:
   *pcc = '7';  // invalid? 
   // for the above pointer, it is invalid because the char pcc is defined as constant ie:"const" constant variables can't be changed
-  pcc = *pcp;  // valid?
-  pcc = argv[0];  // valid?
+  pcc = *pcp;  // valid? Yes
+  pcc = argv[0];  // valid? yes
 
   char * const cp = c;  // cp is a const pointer to char
   // For each of the following, why is the assignment:

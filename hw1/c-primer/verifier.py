@@ -95,13 +95,7 @@ if not os.path.isfile('Makefile'):
     exitWithError('ERROR: Makefile does not exist.')
 print "Good!"
 
-build("sizes", "sizes")
-print "Checking output of sizes ... "
-runAndCheckSizes()
-print "Ok!"
 
-build("pointer", "pointer")
-run("./pointer")  # Run pointer as a sanity check, but there's no output to check
 
 build("swap", "swap")
 print "Checking output of swap ... "
